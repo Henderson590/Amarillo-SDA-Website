@@ -1,0 +1,292 @@
+/* Reset some default browser spacing */
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #222;
+    background: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1b69a1;
+    color: white;
+    font-size: 3rem;         /* scalable font size */
+    font-weight: bold;         /* replaced 'font: bolder' */
+    text-align: center;
+    padding: 50px 20px;
+    margin: 0;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #14517d; /* slightly darker than header for contrast */
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Navigation links */
+nav a {
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 1.2rem;
+    margin: 0 20px;              /* consistent spacing left/right */
+    padding: 8px 12px;
+    text-decoration: none;
+    color: white;                /* always white links */
+    transition: background 0.3s, color 0.3s; /* smooth hover effect */
+}
+
+nav a:hover {
+    background-color: #1b69a1;   /* match header blue */
+    color: black;              /* gold highlight */
+    border-radius: 5px;          /* soft corners on hover */
+}
+
+/* Main content */
+main {
+    text-align: center;
+    font-size: 2rem;
+    padding: 50px 20px;
+}
+
+p {
+    font-size: 1.5rem;        /* normal readable text */
+    max-width: 700px;       /* keep lines from being too wide */
+    margin: 20px auto;      /* centers paragraphs inside main */
+    line-height: 1.8;       /* more breathing room between lines */
+    color: #333;            /* softer black for better readability */
+}
+
+/* Footer */
+footer {
+    background-color: #1b69a1;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.pastor-name {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.pastor-description {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.church-image {
+    display: block;         /* makes margin auto work for centering */
+    margin: 20px auto;      /* centers the image horizontally, adds top/bottom space */
+    max-width: 80%;         /* optional: image won’t exceed 80% of page width */
+    height: auto;           /* keeps aspect ratio */
+    border-radius: 15px;    /* rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* optional: subtle shadow for depth */
+}
+
+.pastor-profile-wrapper {
+    display: flex;
+    justify-content: center;   /* centers the flex container on the page */
+    margin: 40px 20px;         /* spacing around the section */
+}
+
+.pastor-profile {
+    display: flex;
+    align-items: flex-start;   /* top align text and image */
+    gap: 30px;                 /* space between text and image */
+    max-width: 900px;          /* limits total width for nicer layout */
+    flex-wrap: wrap;           /* wraps on smaller screens */
+}
+
+.pastor-text {
+    flex: 1;                   /* text takes remaining space */
+}
+
+.pastor-image {
+    margin-top: 140px;
+    max-width: 500px;          /* image size */
+    width: 100%;               /* responsive within max-width */
+    height: auto;
+    border-radius: 15px;       /* rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.elders-row {
+    display: flex;           /* puts all elders side by side */
+    justify-content: center; /* center the row on the page */
+    gap: 40px;               /* space between each elder */
+    flex-wrap: wrap;         /* moves elders to next line on small screens */
+    margin-top: 20px;
+}
+
+.elder {
+    text-align: center;      /* centers name above the image */
+}
+
+.elder-image {
+    max-width: 150px;        /* controls image size */
+    height: auto;
+    border-radius: 10px;     /* rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* optional subtle shadow */
+}
+
+.elder-name {
+    font-weight: bold;
+    margin-bottom: 10px;     /* space between name and image */
+}
+
+.social-icons {
+    text-align: center;      /* centers the icons */
+    margin: 30px 0;          /* space above and below */
+}
+
+.social-icons a {
+    color: #1b69a1;          /* your brand color or choose another */
+    font-size: 2rem;          /* size of icons */
+    margin: 0 15px;           /* space between icons */
+    transition: color 0.3s;   /* smooth hover effect */
+}
+
+.social-icons a:hover {
+    color: black;           /* change color on hover */
+}
+
+.board-row {
+    display: flex;           /* puts all elders side by side */
+    justify-content: center; /* center the row on the page */
+    gap: 40px;               /* space between each elder */
+    flex-wrap: wrap;         /* moves elders to next line on small screens */
+    margin-top: 20px;
+}
+
+.board {
+    text-align: center;      /* centers name above the image */
+}
+
+.board-image {
+    max-width: 250px;        /* controls image size */
+    height: auto;
+    border-radius: 10px;     /* rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* optional subtle shadow */
+}
+
+.board-name {
+    font-weight: bold;
+    margin-bottom: 10px;     /* space between name and image */
+}
+
+.board-description {
+    font-weight: 100;
+    margin-bottom: 10px;     /* space between name and image */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.event-left-profile-wrapper {
+    display: flex;
+    justify-content: center;   /* centers the flex container on the page */
+    margin: 40px 20px;         /* spacing around the section */
+}
+
+.event-left-profile {
+    display: flex;
+    align-items: flex-start;   /* top align text and image */
+    gap: 30px;                 /* space between text and image */
+    max-width: 1200px;          /* limits total width for nicer layout */
+    flex-wrap: wrap;           /* wraps on smaller screens */
+}
+
+.event-left-text {
+    flex: 1;                   /* text takes remaining space */
+}
+
+.event-image {
+    margin-top: 140px;
+    max-width: 800px;          /* image size */
+    width: 100%;               /* responsive within max-width */
+    height: auto;
+    border-radius: 15px;       /* rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.bottom-image {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.bottom-text {
+    padding-top: 40px;
+    font-weight: 100;
+    font-size: 32px;
+    font-style: italic;
+}
+
+.header-logo {
+    max-width: 100px;
+    max-height: 75px;
+    padding-right: 20px;
+    justify-content: center;
+}
+
+/* Splash Screen */
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1b69a1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.splash-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* space between logo and text */
+}
+
+.splash-logo {
+    width: 150px;
+    height: auto;
+    animation: logo-pop 1.5s ease-in-out;
+}
+
+.splash-text {
+    font-size: 2.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    animation: slide-in 2s ease forwards;
+    animation-delay: 1s; /* starts after logo pops */
+}
+
+/* Logo bounce */
+@keyframes logo-pop {
+    0% { transform: scale(0.5); opacity: 0; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Text slides from right */
+@keyframes slide-in {
+    0% { transform: translateX(-100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Fade splash away */
+#splash-screen.fade-out {
+    animation: fadeOut 4s forwards;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; visibility: hidden; }
+    100%{ transform: translateY(-4000px); }
+}

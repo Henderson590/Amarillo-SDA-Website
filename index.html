@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ASDA - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+    <div id="splash-screen">
+        <div class="splash-content">
+            <img src="images/logo.png" alt="Site Logo" class="splash-logo">
+            <h1 class="splash-text">Amarillo SDA Church<br>Welcomes you!</h1>
+        </div>
+    </div>
+
+
+    <header><img class="header-logo" src="images/logo.png">Amarillo Seventh-Day Adventist Church</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="news.html">Annoucements</a>
+        <a href="board.html">Our Church Family</a>
+        <a href="events.html">Events</a>
+        <a href="angels.html">3 Angels</a>
+        <a href="show.html">TV Show</a>
+    </nav>
+    <main>
+        <h3>Welcome to Amarillo Seventh-Day Adventist Church</h3>
+        <p>We are so glad to have you visiting us, no matter where you are from. We are located at 405 S Western St, Amarillo, TX 79106. We would love to see you at church with us every Saturday! We are a very open church with warming hearts, helping hands, and big smiles.</p>
+        <p>You can visit us every Saturday at 9:30am for Sabbath School, and at 10:30am for church service. If you are ever not available to join us in person, you can always watch us live on Facebook. We would love to have you join us and we can't wait for you to join our church family.</p>
+        <p>If you have any questions or concerns, be sure to contact us through Facebook!</p>
+        <h3>Follow us on Social Media</h3>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100084659978554" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@tiktok.pastor" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/the_tiktok_pastor/?igsh=Z28xaWhwdG1pZWN3#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@AmarilloSeventhdayAdventist/videos" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="pastor-profile-wrapper">
+            <div class="pastor-profile">
+                <div class="pastor-text">
+                    <h1 class="pastor-name">Our Pastor:</h1>
+                    <p class="pastor-description">
+                        Pastor Bobby Harris is the current pastor for our church, and he is a dedicated Seventh-Day Adventist. 
+                        He is very outgoing and loves to help people when they need it. 
+                        If a member of the church ever needs anything, Pastor Bobby is always there to make sure things run smoothly within the church.
+                        Pastor Bobby has been the heart of our church for almost 9 years, he has welcomed everyone who has walked into our church and asked for help.
+                        Maria Harris, his wife, has been alongside him all these years. Supporting any ideas or events that he has ever wanted to do. They are a very outgoing and happy couple, who enjoy being apart of the church family.
+                    </p>
+                </div>
+                <img class="pastor-image" src="images/place-holder.png" alt="Pastor Bobby">
+            </div>
+        </div>
+
+        <div>
+            <p class="bottom-text">"Continue to be a voice for the Kingdom of Heaven" - Pastor Bobby Harris</p>
+            <img class="bottom-image" src="https://assets.adventistconnect.org/amarill0/2025/09/09154007/LOGO_Amarillo_sm.png">
+        </div>
+    </main>
+    <footer>&copy; 2025 Amarillo Seventh-Day Adventist Church</footer>
+
+    <script>
+        // Hide splash screen after animation
+        window.addEventListener("load", () => {
+            const splash = document.getElementById("splash-screen");
+            setTimeout(() => {
+                splash.classList.add("fade-out");
+            }, 4000); // waits 3s before fade
+        });
+    </script>
+</body>
+</html>
