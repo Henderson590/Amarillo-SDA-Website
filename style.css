@@ -44,18 +44,22 @@ nav a:hover {
 
 /* Main content */
 main {
+    padding: 20px;       /* ensures content isn't flush against edges */
+    max-width: 1200px;   /* limits content width on large screens */
+    margin: 0 auto;      /* centers content */
+    font-size: 1.5rem;   /* base font size */
+    line-height: 1.6;    /* readable line spacing */
+    box-sizing: border-box; /* makes padding included in width */
     text-align: center;
-    font-size: 2rem;
-    padding: 50px 20px;
 }
 
 p {
-    font-size: 1.5rem;        /* normal readable text */
-    max-width: 700px;       /* keep lines from being too wide */
-    margin: 20px auto;      /* centers paragraphs inside main */
-    line-height: 1.8;       /* more breathing room between lines */
-    color: #333;            /* softer black for better readability */
+    max-width: 100%;    /* ensures text never overflows container */
+    word-wrap: break-word;  /* breaks long words/URLs instead of overflowing */
+    margin: 15px auto;   /* spacing between paragraphs */
+    text-align: center;
 }
+
 
 /* Footer */
 footer {
@@ -212,9 +216,26 @@ footer {
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
+/* Bottom image */
 .bottom-image {
-    padding-top: 20px;
-    padding-bottom: 5px;
+    display: block;
+    margin: 15px auto;       /* centers image */
+    max-width: 80%;           /* never larger than 80% of screen */
+    height: auto;             /* keeps aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    .bottom-image {
+        max-width: 95%;       /* almost full width on phones */
+    }
+
+    .bottom-text {
+        font-size: 1.5rem;    /* scale text down */
+        padding: 20px 10px;   /* more breathing room */
+    }
 }
 
 .bottom-text {
@@ -330,5 +351,17 @@ footer {
         justify-content: space-between;
         padding: 20px;
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 15px;      /* smaller padding for phones */
+        font-size: 1.2rem;  /* smaller font for easier reading */
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.4;
     }
 }
