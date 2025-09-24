@@ -290,3 +290,45 @@ footer {
     to { opacity: 0; visibility: hidden; }
     100%{ transform: translateY(-4000px); }
 }
+
+/* Hamburger button hidden by default */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: auto; /* pushes it to the right */
+}
+
+/* Small screen nav */
+@media (max-width: 768px) {
+    nav.nav-links {
+        display: none;
+        flex-direction: column;
+        background: #14517d;
+        text-align: center;
+    }
+
+    nav.nav-links.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+}
